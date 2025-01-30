@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { FiMoon, FiSun } from 'react-icons/fi'
 
 export const ToggleButton = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -24,9 +25,10 @@ export const ToggleButton = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className='px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded transition'
+      className='p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-full transition hover:bg-gray-300 dark:hover:bg-gray-600'
+      aria-label='Toggle dark mode'
     >
-      Toggle {darkMode ? 'Light' : 'Dark'} Mode
+      {darkMode ? <FiSun /> : <FiMoon />}
     </button>
   )
 }

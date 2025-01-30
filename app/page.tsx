@@ -10,7 +10,6 @@ export default function Home() {
       <About />
       <Projects projects={projects} />
       <Contact />
-      <ToggleButton />
     </div>
   )
 }

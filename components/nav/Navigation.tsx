@@ -1,5 +1,6 @@
 import React from 'react'
 import NavLinks from './NavLinks'
+import { ToggleButton } from '../ToggleButton'
 
 const Navigation = () => {
   return (
@@ -7,9 +8,8 @@ const Navigation = () => {
       <NavLinks href='/'>Adriel Barangan</NavLinks>
       <div className='flex space-x-2 text-md'>
         <NavLinks href='/projects'>projects</NavLinks>
-        <NavLinks href='/bookmarks'>bookmarks</NavLinks>
         <NavLinks href='/readings'>readings</NavLinks>
-        <NavLinks href='#contact'>contact</NavLinks>
+        <ToggleButton />
       </div>
     </div>
   )

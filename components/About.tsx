@@ -1,6 +1,13 @@
+'use client'
+
 import React from 'react'
 
 const About = () => {
+  const openResume = (event) => {
+    event.preventDefault()
+    window.open(`/files/Adriel Barangan_Resume.pdf`)
+  }
+
   return (
     <div className='mt-24'>
       <h2 className='text-lg font-bold'>Adriel Barangan</h2>
@@ -15,6 +22,11 @@ const About = () => {
         such as the projects I have worked on, the books I read and the games I
         play.
       </p>
+      <div className='mt-6'>
+        <button className='hover:text-zinc-600' onClick={openResume}>
+          View Resume
+        </button>
+      </div>
     </div>
   )
 }
