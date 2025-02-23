@@ -4,7 +4,7 @@ import { MdOutlineMailOutline } from 'react-icons/md'
 
 const Contact = () => {
   return (
-    <div className='flex flex-col mt-24'>
+    <div className='animate-fadeIn flex flex-col mt-24'>
       <h2 className='text-xl font-bold'>Contact</h2>
       <p className='pt-4 text-md max-w-2xl'>
         Let's connect. If you have a project idea or you want to work together
