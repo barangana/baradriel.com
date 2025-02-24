@@ -1,6 +1,7 @@
 'use client'
+
+import { Moon, Sun } from 'lucide-react'
 import { useState, useEffect } from 'react'
-import { FiMoon, FiSun } from 'react-icons/fi'
 
 export const ToggleButton = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -25,10 +26,9 @@ export const ToggleButton = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className='p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-full transition hover:bg-gray-300 dark:hover:bg-gray-600'
       aria-label='Toggle dark mode'
     >
-      {darkMode ? <FiSun /> : <FiMoon />}
+      {darkMode ? <Sun /> : <Moon />}
     </button>
   )
 }
