@@ -8,9 +8,9 @@ const Contact = () => {
     <div className='animate-fade-in flex flex-col mt-24'>
       <h2 className='text-xl font-bold'>Contact</h2>
       <p className='pt-4 text-md max-w-2xl'>
-        Let's connect. If you have a project idea or you want to work together
-        or just want to chat and say hi, reach out to me on social media or send
-        me an email.
+        Let&apos;s connect. If you have a project idea or you want to work
+        together or just want to chat and say hi, reach out to me on social
+        media or send me an email.
       </p>
       <div className='flex pt-4'>
         <li className='flex list-none space-x-2'>
