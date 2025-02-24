@@ -4,7 +4,7 @@ import { Moon, Sun } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 export const ToggleButton = () => {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState<boolean | null>(null)
 
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode') === 'true'
@@ -15,17 +15,14 @@ export const ToggleButton = () => {
   }, [])
 
   useEffect(() => {
+    if (darkMode === null) return
     localStorage.setItem('darkMode', String(darkMode))
-    if (darkMode) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
+    document.documentElement.classList.toggle('dark', darkMode)
   }, [darkMode])
 
   return (
     <button
-      onClick={() => setDarkMode(!darkMode)}
+      onClick={() => setDarkMode((prev) => !prev)}
       aria-label='Toggle dark mode'
     >
       {darkMode ? <Sun /> : <Moon />}

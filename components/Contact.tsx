@@ -14,16 +14,16 @@ const Contact = () => {
       </p>
       <div className='flex pt-4'>
         <li className='flex list-none space-x-2'>
-          <a className='hover: text-white' href='https://github.com/barangana'>
+          <a className='hover:text-white' href='https://github.com/barangana'>
             <FaGithub size={25} color='#000000' />
           </a>
           <a
-            className='hover: text-white'
+            className='hover:text-white'
             href='https://www.linkedin.com/in/barangana/'
           >
             <FaLinkedin size={25} color='#000000' />
           </a>
-          <a className='hover: text-white' href='mailto:adriel@baradriel.com'>
+          <a className='hover:text-white' href='mailto:adriel@baradriel.com'>
             <MdOutlineMailOutline size={25} color='#000000' />
           </a>
         </li>

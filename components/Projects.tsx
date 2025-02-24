@@ -9,7 +9,7 @@ const Projects = ({ projects }: ProjectProps) => {
       <div>
         {projects.map((project) => (
           <Link key={project.id} href={project.href}>
-            <div className='py-3 hover:bg-zinc-200 max-w-2xl duration-300 ease-in-out rounded-md'>
+            <div className='py-3 max-w-2xl duration-300 ease-in-out rounded-md'>
               <h3 className='text-lg font-bold'>{project.name}</h3>
               <p>{project.short_desc}</p>
             </div>
